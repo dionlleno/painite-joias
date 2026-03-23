@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/pages/carrinho.css">
+    <title>CARRINHO - PAINITE JOIAS</title>
+    <script src="js/script.js" defer></script>
+</head>
+<body onload="carregarCarrinho()">
+    <!-- Carrega o Header -->
+    <div id="header"></div>
+
+    <!-- Conteúdo Principal do Carrinho -->
+    <div class="carrinho-container">
+        <div class="carrinho">
+            <h1>Carrinho de Compras</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Imagem</th>
+                        <th>Descrição</th>
+                        <th>Quantidade</th>
+                        <th>Preço</th>
+                        <th>Total</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Itens do carrinho serão carregados aqui -->
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4"><strong>Total</strong></td>
+                        <td>R$ 0,00</td>
+                        <td></td>
+                    </tr>
+                </tfoot>
+            </table>
+            <button class="button" onclick="continuarComprando()">Continuar Comprando</button>
+            <button class="button" onclick="finalizarCompra()">Finalizar Compra</button>
+        </div>
+    </div>
+
+    <!-- Notificação Visual -->
+    <div id="notification" class="notification"></div>
+
+    <!-- Carrega o Footer -->
+    <div id="footer"></div>
+</body>
+</html>

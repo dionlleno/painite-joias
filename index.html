@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>HOME - PAINITE JOIAS</title>
+    <meta name="description" content="Painite Joias - A sua loja de joias exclusivas, com uma variedade de anéis, brincos, colares e relógios.">
+</head>
+
+<body>
+    <!-- Header -->
+    <div id="header"></div>
+
+    <br>
+
+    <div class="box-banner">
+        <div class="carousel">
+            <img class="img-banner" src="imagens/banner01.png" alt="Banner de promoção de joias 1">
+            <img class="img-banner" src="imagens/banner02.png" alt="Banner de promoção de joias 2">
+            <img class="img-banner" src="imagens/banner03.png" alt="Banner de promoção de joias 3">
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+
+    <br>
+    <hr class="separador">
+    <br>
+
+    <div class="listas-produtos">
+        <!-- Seção de Anéis -->
+        <div class="lista-aneis">
+            <h1>Aneis</h1>
+            <ul>
+                <li class="produto">
+                    <a href="#">
+                        <img class="img-lista" src="imagens/anel.png" alt="Anel de ouro com detalhes finos">
+                        <p>Anel de Ouro <br> R$ 150,00</p>
+                        <button class="add-to-cart-button" onclick="adicionarAoCarrinho('Anel de Ouro', 150, 'imagens/anel.png')">Adicionar ao Carrinho</button>
+                    </a>
+                </li>
+                <li class="produto">
+                    <a href="#">
+                        <img class="img-lista" src="imagens/anel.png" alt="Anel de prata com pedra preciosa">
+                        <p>Anel de Prata <br> R$ 180,00</p>
+                        <button class="add-to-cart-button" onclick="adicionarAoCarrinho('Anel de Prata', 180, 'imagens/anel.png')">Adicionar ao Carrinho</button>
+                    </a>
+                </li>
+                <li class="produto">
+                    <a href="#">
+                        <img class="img-lista" src="imagens/anel.png" alt="Anel de ouro branco com detalhes">
+                        <p>Anel de Ouro Branco <br> R$ 200,00</p>
+                        <button class="add-to-cart-button" onclick="adicionarAoCarrinho('Anel de Ouro Branco', 200, 'imagens/anel.png')">Adicionar ao Carrinho</button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Seção de Brincos -->
+        <div class="lista-brincos">
+            <h1>Brincos</h1>
+            <ul>
+                <li class="produto">
+                    <a href="#">
+                        <img class="img-lista" src="imagens/brincos.png" alt="Brincos de pérola com fecho de prata">
+                        <p>Brincos de Pérola <br> R$ 80,00</p>
+                        <button class="add-to-cart-button" onclick="adicionarAoCarrinho('Brincos de Pérola', 80, 'imagens/brincos.png')">Adicionar ao Carrinho</button>
+                    </a>
+                </li>
+                <li class="produto">
+                    <a href="#">
+                        <img class="img-lista" src="imagens/brincos.png" alt="Brincos de ouro com pedra de rubi">
+                        <p>Brincos de Rubi <br> R$ 120,00</p>
+                        <button class="add-to-cart-button" onclick="adicionarAoCarrinho('Brincos de Rubi', 120, 'imagens/brincos.png')">Adicionar ao Carrinho</button>
+                    </a>
+                </li>
+                <li class="produto">
+                    <a href="#">
+                        <img class="img-lista" src="imagens/brincos.png" alt="Brincos de prata com zircônia">
+                        <p>Brincos de Zircônia <br> R$ 90,00</p>
+                        <button class="add-to-cart-button" onclick="adicionarAoCarrinho('Brincos de Zircônia', 90, 'imagens/brincos.png')">Adicionar ao Carrinho</button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Seção de Colares -->
+        <div class="lista-colar">
+            <h1>Colares</h1>
+            <ul>
+                <li class="produto">
+                    <a href="#">
+                        <img class="img-lista" src="imagens/colar.png" alt="Colar de pérolas brancas">
+                        <p>Colar de Pérolas <br> R$ 250,00</p>
+                        <button class="add-to-cart-button" onclick="adicionarAoCarrinho('Colar de Pérolas', 250, 'imagens/colar.png')">Adicionar ao Carrinho</button>
+                    </a>
+                </li>
+                <li class="produto">
+                    <a href="#">
+                        <img class="img-lista" src="imagens/colar.png" alt="Colar de ouro com pingente">
+                        <p>Colar de Ouro <br> R$ 300,00</p>
+                        <button class="add-to-cart-button" onclick="adicionarAoCarrinho('Colar de Ouro', 300, 'imagens/colar.png')">Adicionar ao Carrinho</button>
+                    </a>
+                </li>
+                <li class="produto">
+                    <a href="#">
+                        <img class="img-lista" src="imagens/colar.png" alt="Colar de prata com ametista">
+                        <p>Colar de Prata <br> R$ 220,00</p>
+                        <button class="add-to-cart-button" onclick="adicionarAoCarrinho('Colar de Prata', 220, 'imagens/colar.png')">Adicionar ao Carrinho</button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Seção de Relógios -->
+        <div class="lista-relogio">
+            <h1>Relógios</h1>
+            <ul>
+                <li class="produto">
+                    <a href="#">
+                        <img class="img-lista" src="imagens/relogio.png" alt="Relógio de pulso clássico com pulseira de couro">
+                        <p>Relógio Clássico <br> R$ 250,00</p>
+                        <button class="add-to-cart-button" onclick="adicionarAoCarrinho('Relógio Clássico', 250, 'imagens/relogio.png')">Adicionar ao Carrinho</button>
+                    </a>
+                </li>
+                <li class="produto">
+                    <a href="#">
+                        <img class="img-lista" src="imagens/relogio.png" alt="Relógio esportivo com cronômetro">
+                        <p>Relógio Esportivo <br> R$ 300,00</p>
+                        <button class="add-to-cart-button" onclick="adicionarAoCarrinho('Relógio Esportivo', 300, 'imagens/relogio.png')">Adicionar ao Carrinho</button>
+
+                    </a>
+                </li>
+                <li class="produto">
+                    <a href="#">
+                        <img class="img-lista" src="imagens/relogio.png" alt="Relógio de aço inoxidável com mostrador azul">
+                        <p>Relógio de Aço <br> R$ 350,00</p>
+                        <button class="add-to-cart-button" onclick="adicionarAoCarrinho('Relógio de Aço', 350, 'imagens/relogio.png')">Adicionar ao Carrinho</button>
+
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <hr class="separador">
+
+    <!-- Footer -->
+    <div id="footer"></div>
+    
+    <div id="notification" class="notification"></div>
+
+    <!-- Scripts -->
+    <script src="js/carrossel.js"></script>
+    <script src="js/script.js"></script> <!-- Script responsável por carregar o header e footer -->
+</body>
+
+</html>
